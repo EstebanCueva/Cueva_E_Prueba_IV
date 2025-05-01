@@ -23,5 +23,7 @@ namespace Cueva_E_Prueba.Models
         public bool IsPureBreed { get; set; }
 
         public float Weight { get; set; }
+
+        //public string EstebanCueva { get; set; }
     }
 }

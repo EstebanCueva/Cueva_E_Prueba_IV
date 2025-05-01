@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Cueva_E_Prueba.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<Cueva_E_PruebaContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Cueva_E_PruebaContext") ?? throw new InvalidOperationException("Connection string 'Cueva_E_PruebaContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -15,4 +15,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Images\meme-cuadrado-gato-vibrante-simple_742173-4493 %281%29.jpg" />
+  </ItemGroup>
+
 </Project>
